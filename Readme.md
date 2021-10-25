@@ -9,11 +9,13 @@ Mac:
 - Run in a terminal: `brew install git node visual-studio-code`
 
 ## Cloning This Repository
-Run the following command in your development directory:
+Run the following command in your development directory:  
 `git clone git@github.com:hexagonsi/programming-challenges.git`
 
 ## Writing Your Solutions
-Write your solutions in the provided functions under the `challenges` directory. Do not touch any other files.
+Open the programming-challenges folder in vscode.  
+Write your solutions in the provided functions under the `challenges` directory.  
+Do not touch any other files.
 
 ## Checking Your Solutions
 1) Open the vscode integrated terminal by pressing:  
