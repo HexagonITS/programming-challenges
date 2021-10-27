@@ -10,7 +10,7 @@ Mac:
 
 ## Cloning This Repository
 Run the following command in your development directory:  
-`git clone git@github.com:hexagonsi/programming-challenges.git`
+`git clone https://github.com/HexagonITS/programming-challenges.git`
 
 ## Writing Your Solutions
 Open the programming-challenges folder in vscode.  
