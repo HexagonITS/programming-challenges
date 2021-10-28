@@ -1,6 +1,8 @@
-
-function phoneticPassword(inputArray) {
+function phoneticPassword(input) {
+    var out = []
     //solution here
+
+    return out
 }
 
-module.exports = phoneticPassword
+export default phoneticPassword

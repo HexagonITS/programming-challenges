@@ -1,4 +1,4 @@
-var crypto = require('crypto')
+import {randomInt} from 'crypto'
 
 //length will be a positive integer
 function generatePassword(length) {
@@ -7,4 +7,4 @@ function generatePassword(length) {
     //return password as a string
 }
 
-module.exports = generatePassword
+export default generatePassword

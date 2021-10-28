@@ -29,8 +29,8 @@ Do not touch any other files.
 At hexagon, we want to provide a way for clients to log into a portal to view status updates. To accomplish this, we have a phone service that clients can call to get a one-time-password from a automated system. This password needs to be both secure, and easy for the phone bot to read.
 
 **Challenge:**  
-Write a function that generates a random, secure password. The length of the password should be equal to the `length` parameter. The built in nodejs `crypto` library has been provided to help get a secure, random number. Use the [randomInt](https://nodejs.org/api/crypto.html#cryptorandomintmin-max-callback) function in this library (do not use a callback).
-The password should be able to contain the following:
+Write a function that generates a random, secure password. The length of the password should be equal to the `length` parameter. The built in node [randomInt](https://nodejs.org/api/crypto.html#cryptorandomintmin-max-callback) from the `crypto` library has been provided to help get a secure, random number (do not use a callback).
+The password should be able to contain the following characters:
 - `a-z`
 - `A-Z` (uppercase)
 - `0-9`
@@ -38,10 +38,10 @@ The password should be able to contain the following:
 
 ### 2. Read Password
 **Problem:**  
-After generating the password from challenge 1, we provided your output to the phone service and realized we have a major problem. The phone bot is reading lowercase and uppercase letters the same, and special characters aren't being read at all! To fix this, we are going to need to make a function that translates our character array into the phonetic spelling for each of those characters.
+After generating the password from challenge 1, we provided your output to the phone service and realized we have a major problem. The phone bot is reading lowercase and uppercase letters the same, and special characters aren't being read at all! To fix this, we are going to need to make a function that translates our password string into an array of the phonetic spelling for each character.
 
 **Challenge:**  
-Write a function that translates each character from the input array, into its phonetic equivalent. The function should throw an error if the array contains something you cant translate.  
+Write a function that translates each character from the input string, into its phonetic equivalent. The function should throw an error if the array contains something you cant translate.  
 Here are some examples:
 - `F` => `capital f`
 - `-` => `dash`
