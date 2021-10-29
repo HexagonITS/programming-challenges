@@ -1,6 +1,7 @@
 import phoneticPassword from '../challenges/02-phonetic-password'
 
 const allCharacters = 'abcdefghijklmnopqrstuvwxyz0123456789+#_-'
+const invalidTestCharacters = '-/>.$~=*?'
 
 test('generates an array of characters', () => {
     const arr = phoneticPassword(allCharacters)
@@ -36,4 +37,12 @@ test('handles symbols', () => {
     const arr = phoneticPassword(symbols)
     const answer = ['plus', 'pound', 'underscore', 'dash']
     expect(arr).toEqual(answer)
+})
+
+test('throws for invalid characters', () => {
+    for(const char in invalidTestCharacters) {
+        expect(() => {
+            phoneticPassword('abc' + char + '123')
+        }).toThrowError(Error)
+    }
 })

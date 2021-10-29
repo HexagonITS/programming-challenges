@@ -9,8 +9,11 @@ Mac:
 - Run in a terminal: `brew install git node visual-studio-code`
 
 ## Cloning This Repository
-Run the following command in your development directory:  
+1) Run the following command in your development directory:  
 `git clone https://github.com/HexagonITS/programming-challenges.git`
+2) Open the project in vs-code, then open the integrated terminal by pressing:  
+`ctrl`+`~` (windows) `cmd`+`~` (mac).  
+3) Run `npm install` to install dependencies required for the project.
 
 ## Writing Your Solutions
 Open the programming-challenges folder in vscode.  
@@ -18,8 +21,7 @@ Write your solutions in the provided functions under the `challenges` directory.
 Do not touch any other files.
 
 ## Checking Your Solutions
-1) Open the vscode integrated terminal by pressing:  
-`ctrl`+`~` (windows) `cmd`+`~` (mac).  
+1) Open the vs-code integrated terminal.
 2) Run `npm test` followed by the challenge number. So for challenge one you would run `npm test 01`
 
 # Challenges
